@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- main.xml -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TableName 입력 : " />
+
+            <EditText
+                android:id="@+id/EditText1TableName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ALBUMLIST" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID 컬럼 입력 :" />
+
+            <EditText
+                android:id="@+id/EditText2ColumnId"
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="    " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title 컬럼 입력 :" />
+
+            <EditText
+                android:id="@+id/EditText3ColumnTitle"
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:text="Color 컬럼 입력:" />
+
+            <EditText
+                android:id="@+id/EditText6ColumnColor"
+                android:layout_width="95px"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AbsImagePath 컬럼:" />
+
+            <EditText
+                android:id="@+id/EditText10ColumnAbsImagePath"
+                android:layout_width="150px"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ImagePath 컬럼:" />
+
+            <EditText
+                android:id="@+id/EditText4ColumnImagePath"
+                android:layout_width="320px"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contents 컬럼:" />
+
+            <EditText
+                android:id="@+id/EditText5ColumnContents"
+                android:layout_width="320px"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="albumId(FK) for StoryList :" />
+
+            <EditText
+                android:id="@+id/EditText7ColumnAlbumId_For_FK"
+                android:layout_width="94px"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="storyListID(FK) for StoryView:" />
+
+            <EditText
+                android:id="@+id/EditText8ColumnStoryList_For_FK"
+                android:layout_width="94px"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="무엇을 수정할 것인지 (int whatColumn? )" />
+
+            <EditText
+                android:id="@+id/EditText9whatColumn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3" />
+        </LinearLayout>
+
+        <!-- 설정을 위한 버튼 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/ButtonAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="select\nAll"
+                android:textSize="40px" />
+
+            <Button
+                android:id="@+id/ButtonDeleteDb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Drop\nDb"
+                android:textSize="40px" />
+
+            <Button
+                android:id="@+id/ButtonInsertDb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="insert\nDb"
+                android:textSize="40px" />
+
+            <Button
+                android:id="@+id/ButtonUpdateDb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="update\nDb"
+                android:textSize="40px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/ButtonDeleteId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="deleteId"
+                android:textSize="40px" />
+
+            <Button
+                android:id="@+id/ButtonWhereId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="whereId"
+                android:textSize="40px" />
+
+            <Button
+                android:id="@+id/ButtonGetLastIdValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="getLastId"
+                android:textSize="40px" />
+        </LinearLayout>
+
+        <!-- 데이터를 표시 목록보기 -->
+
+
+        <!-- ListView 지웠음 -->
+
+
+        <!-- 데이터가 1 행도 때 표시되는 텍스트 뷰 -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/TextViewData01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </ScrollView>
+    </LinearLayout>
+
+</ScrollView>

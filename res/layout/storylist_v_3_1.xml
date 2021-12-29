@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13.5"
+        android:background="#8800FF00" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35.7"
+        android:background="#880000FF"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="38"
+            android:background="#00FFFF00" >
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/hor01"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="129.92"
+            android:background="#00FFFFFF"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/readyforstorylist01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" > 
+
+                <LinearLayout
+                    android:id="@+id/storylist01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.95"
+                    android:background="@drawable/storylist"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="18"
+                        android:text="나는야 +버튼 위 리니어" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="50"
+                        android:orientation="horizontal"
+                        android:text="내가 바로 +버튼 들어갈 리니어" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#88000000" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ListView
+                                android:id="@+id/listviewStoryList01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="17"
+                                android:background="#00FFFFFF"
+                                android:cacheColorHint="#00000000"
+                                android:divider="#00000000"
+                                android:listSelector="#00FFFFFF"
+                                android:scrollbars="none" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#88000000" >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="9"
+                        android:text=" +버튼 아래 리니어" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/addview"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.95"
+                    android:background="@drawable/storylist"
+                    >
+                </Button>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19.95"
+        android:background="#8800FF00" >
+    </LinearLayout>
+
+</LinearLayout>

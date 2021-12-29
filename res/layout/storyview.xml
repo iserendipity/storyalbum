@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/StoryView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- ===========           경 	계	 지	 점 	<상단> 	=========== -->
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/viewtop" />
+                <!-- 위치분할(상단) 시작 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="4" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="7.1"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="33" >
+                        </LinearLayout>
+
+                        <!-- Title Text 들어가는곳 -->
+
+                        <LinearLayout
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="51"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/TextIv01"
+                                android:textColor="#000000"
+                                android:maxLines="2"
+                                android:textSize="15sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                        <!-- Title Text 들어가는곳 -->
+
+                        <LinearLayout
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8" >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="2.1" >
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 위치분할(상단) 끝 -->
+            </FrameLayout>
+            <!-- ===========           경 	계	 지	 점	<중반> 	=========== -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/viewmiddle" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/TextIv02"
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_weight="84"
+                        android:orientation="vertical" >
+
+                        <!-- ========DB 블럭 들어가는 곳======== -->
+
+                        <!-- ========DB 블럭 들어가는 곳======== -->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8" >
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <!-- ===========           경 	계	 지	 점 	<하단> 	=========== -->
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/viewbottom" />
+
+                <!-- 분할시작(하단) -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="28.8" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="18.5"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="64.8" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnLayout01"
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="22.9"
+                            android:orientation="horizontal" >
+
+                            <!-- Button 들어가는곳 -->
+
+                            <ImageView
+                                android:id="@+id/EditBtn01"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/viewbtn" />
+                            <!-- Button 들어가는곳 -->
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0px"
+                            android:layout_height="match_parent"
+                            android:layout_weight="12.3" >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="52.7" >
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 분할시작(하단) -->
+
+            </FrameLayout>
+            <!-- ===========           경 	계	 지	 점 	<끝> 	=========== -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
